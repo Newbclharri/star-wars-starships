@@ -1,0 +1,32 @@
+
+
+const StarshipCards = ({starships1, starships2, starships3, starships4, allStarships})=>{
+
+    const allData  = [];
+    let allCards = null;
+
+    if(allStarships){
+        for(let starshipsData of allStarships){
+            for(let result of starshipsData){
+                allData.push(result)
+            }
+        console.log(allData)
+        }
+
+        allCards = allData.map(({name}, index)=>{
+            return(
+                <div className="star-ships" key={index}>
+                    {name}
+                </div>
+            )
+        })
+    }
+        
+    return(
+        <div className="starships-container">
+            {allCards}
+        </div>
+    )
+}
+
+export default StarshipCards
