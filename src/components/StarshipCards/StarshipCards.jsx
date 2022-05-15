@@ -10,7 +10,6 @@ const StarshipCards = ({allStarships})=>{
             for(let result of starshipsData){
                 allData.push(result)
             }
-        console.log(allData)
         }
 
         allCards = allData.map(({name}, index)=>{
