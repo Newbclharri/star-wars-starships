@@ -1,6 +1,6 @@
 
 
-const StarshipCards = ({starships1, starships2, starships3, starships4, allStarships})=>{
+const StarshipCards = ({allStarships})=>{
 
     const allData  = [];
     let allCards = null;
